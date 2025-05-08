@@ -154,7 +154,25 @@ int main()
                 cout << "Data dengan nomor mahasiswa " << nim << " berhasil dihapus " << endl;
             break;
 
-        
+        case '4':
+        {
+            if (mhs.listEmpty() == true)
+            {
+                cout << "\nList Kosong!\n";
+                break;
+            }
+            Node *previous, *current;
+            cout << "\nMasukkan No mahasiswa yang dicari : ";
+            cin >> nim;
+            if (mhs.Search(nim, previous, current) == false)
+                cout << "Data tidak ditemukan" << endl;
+            else
+            {
+                cout << "\nData ditemukan\n";
+                cout << "\nNIM Mahasiswa: " << current->noMhs << endl;
+            }
+            break;
+        }
 
         }
     } while (ch != '5');
