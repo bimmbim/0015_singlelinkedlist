@@ -117,7 +117,30 @@ int main()
     int nim;
     char ch;
 
-    
+    do
+    {
+        cout << "\nMenu";
+        cout << "\n1. Menambahkan data ke dalam list" << endl;
+        cout << "2. Menampilkan data dari dalam list" << endl;
+        cout << "3. Menghapus satu data dalam list" << endl;
+        cout << "4. Mencari data dalam list" << endl;
+        cout << "5. Keluar\n";
+        cout << "Masukkan pilihan (1-5): ";
+        cin >> ch;
+
+        switch (ch)
+        {
+        case '1':
+            mhs.addNode();
+            break;
+
+        
+
+
+        
+
+        }
+    } while (ch != '5');
 
     return 0;
 }
