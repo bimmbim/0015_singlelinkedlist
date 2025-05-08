@@ -145,6 +145,14 @@ int main()
             }
             break;
 
+        case '3':
+            cout << "\nMasukkan nomor mahasiswa yang akan dihapus : ";
+            cin >> nim;
+            if (mhs.delNode(nim) == false)
+                cout << "Data tidak ditemukan" << endl;
+            else
+                cout << "Data dengan nomor mahasiswa " << nim << " berhasil dihapus " << endl;
+            break;
 
         
 
